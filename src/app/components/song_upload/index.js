@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { Text, View, StyleSheet, TextInput, Button } from 'react-native';
 import { connect } from 'react-redux';
 import { nextStep, prevStep, setStep } from '../../actions/wizard_step';
-import Step1NameSong from './step1';
+import NameSong from './step1';
+import AuthorSong from './step2';
+import UploadTrack from './step3';
+import { UploadFromDevice, UploadFromOther } from './step3xx';
 
 /*
 
@@ -15,37 +18,39 @@ import Step1NameSong from './step1';
 
 export class SongUpload extends Component {
 
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         show: true,
-    //         text: "hola test"
-    //     }
-    // }
 
     render() {
 
         switch (this.props.step.step) {
-            case 0:
-                return (
-                    <View>
-                        <Step1NameSong next={this.props.nextStep}></Step1NameSong>
-                    </View>
-                )
             case 1:
                 return (
                     <View>
-                        <Text onPress={() => { this.props.nextStep() }}>step1</Text>
-                        <Text onPress={() => { this.props.prevStep() }}>step1</Text>
-
+                        <NameSong next={this.props.nextStep} nameArtist={"Sandor"}></NameSong>
                     </View>
                 )
-
             case 2:
                 return (
                     <View>
-                        <Text onPress={() => { this.props.prevStep() }} >step2</Text>
+                        <AuthorSong next={this.props.nextStep} jump={this.props.setStep}></AuthorSong>
+                    </View>
+                )
 
+            case 3:
+                return (
+                    <View>
+                        <UploadTrack jump={this.props.setStep}></UploadTrack>
+                    </View>
+                )
+            case 31:
+                return (
+                    <View>
+                        <UploadFromDevice jump={this.props.setStep}></UploadFromDevice>
+                    </View>
+                )
+            case 32:
+                return (
+                    <View>
+                        <UploadFromOther jump={this.props.setStep}></UploadFromOther>
                     </View>
                 )
             default:

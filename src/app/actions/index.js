@@ -45,3 +45,11 @@ export function songSetName(params) {
         payload: params
       };
 }
+
+export function songSetAuthor(params) {
+  return {
+        type: SONG_SET_AUTHOR,
+        payload: params
+      };
+}
+

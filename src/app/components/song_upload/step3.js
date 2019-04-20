@@ -5,14 +5,14 @@ import { songSetName } from '../../actions/index';
 import {GLOBAL_TIME_ANIMATION} from '../../config';
 
 
-export class NameSong extends Component {
+
+export class UploadTrack extends Component {
 
     _isMounted = true;
     constructor(props) {
         super(props);
         this.state = {
-            show: true,
-            text: ""
+            show: true
         }
 
     }
@@ -36,7 +36,7 @@ export class NameSong extends Component {
             return (
                 <View>
                     <Text>
-                        Perfecto {this.props.nameArtist}, Empecemos.
+                        Nos quieres enviar el archivo de audio ?
                     </Text>
                 </View>
             )
@@ -47,24 +47,16 @@ export class NameSong extends Component {
                     <Text>
                         Introduce el nombre de la canción
                     </Text>
-                    <TextInput style={{
-                        height: 40,
-                        margin: 20,
-                        padding: 10,
-                        borderColor: 'gray',
-                        borderWidth: 1
-                    }}
-                        keyboardType='default'
-                        placeholder='Nombre de la cancion'
-                        onChangeText={(text) => this.setState(prevState => { return { text: text } })}>
-                    </TextInput>
-                    <Button title="Continuar" onPress={() => {
-                        if (this.state.text == "") {
-                            alert("Introduzca un nombre");
-                        } else {
-                            this.props.songSetName(this.state.text);
-                            this.props.next();
-                        }
+                    
+                    <Button title="Cargar Archivo" onPress={() => {
+
+                        // this.props.next();
+                        this.props.jump(31);
+
+                    }}></Button>
+                    <Button title="Pedir Archivo a Otro " onPress={() => {
+                        this.props.jump(32);
+
                     }}></Button>
                 </View>
             )
@@ -97,4 +89,4 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(NameSong);
+export default connect(mapStateToProps, mapDispatchToProps)(UploadTrack);
