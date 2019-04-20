@@ -15,7 +15,7 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <View>
-          <SongUpload name="sandor" ></SongUpload>
+          <SongUpload name="sandor"></SongUpload>
         </View>
       </Provider>
       

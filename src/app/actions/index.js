@@ -29,12 +29,19 @@
 //     }
 // }
 
-import {CHANGE_NAME} from '../constants/const';
+import {CHANGE_NAME, SONG_SET_NAME} from '../constants/const';
 
 
 export function changeName(params) {
   return {
         type: CHANGE_NAME,
+        payload: params
+      };
+}
+
+export function songSetName(params) {
+  return {
+        type: SONG_SET_NAME,
         payload: params
       };
 }
