@@ -29,7 +29,7 @@
 //     }
 // }
 
-import {CHANGE_NAME, SONG_SET_NAME} from '../constants/const';
+import {CHANGE_NAME, SONG_SET_NAME, SONG_EMAIL_LOCATOR, SONG_PHONE_LOCATOR} from '../constants/const';
 
 
 export function changeName(params) {
@@ -53,3 +53,17 @@ export function songSetAuthor(params) {
       };
 }
 
+export function songSetEmailLocator(params) {
+  return {
+        type: SONG_EMAIL_LOCATOR,
+        payload: params
+      };
+}
+
+
+export function songSetPhoneLocator(params) {
+  return {
+        type: SONG_PHONE_LOCATOR,
+        payload: params
+      };
+}

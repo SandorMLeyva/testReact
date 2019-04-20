@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, TextInput, Button } from 'react-native';
-import { connect } from 'react-redux';
-import { songSetName } from '../../actions/index';
 import {GLOBAL_TIME_ANIMATION} from '../../config';
 
 
 
-export class UploadTrack extends Component {
+export default class UploadTrack extends Component {
 
     _isMounted = true;
     constructor(props) {
@@ -49,14 +47,10 @@ export class UploadTrack extends Component {
                     </Text>
                     
                     <Button title="Cargar Archivo" onPress={() => {
-
-                        // this.props.next();
                         this.props.jump(31);
-
                     }}></Button>
                     <Button title="Pedir Archivo a Otro " onPress={() => {
                         this.props.jump(32);
-
                     }}></Button>
                 </View>
             )
@@ -75,18 +69,3 @@ const styles = StyleSheet.create({
 });
 
 
-const mapStateToProps = state => {
-    return {
-        name: state.songSetName
-    }
-};
-
-const mapDispatchToProps = dispatch => {
-    return {
-        songSetName: params => {
-            dispatch(songSetName(params));
-        }
-    }
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(UploadTrack);

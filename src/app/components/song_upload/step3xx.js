@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, TextInput, Button } from 'react-native';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
+import {songSetEmailLocator, songSetPhoneLocator} from '../../actions/index';
 
 
-export class UploadFromDevice extends Component {
+class UploadFromDevice_ extends Component {
 
     _isMounted = true;
     constructor(props) {
@@ -36,7 +37,7 @@ export class UploadFromDevice extends Component {
 }
 
 
-export class UploadFromOther extends Component {
+class UploadFromOther_ extends Component {
 
     _isMounted = true;
     constructor(props) {
@@ -78,17 +79,15 @@ export class UploadFromOther extends Component {
 
                 <Button title="Continuar" onPress={() => {
                     
-                    // this.props.songSetName(this.state.text);
                     if(this.state.phone != ""){
-                        alert("subir telefono con redux");
+                        this.props.songSetPhoneLocator(this.state.phone);
                     }
                     if(this.state.email != ""){
-                        alert("subir email con redux");
+                        this.props.songSetEmailLocator(this.state.email);
                     }
                     if(this.state.email == "" && this.state.phone == ""){
                         alert("Rellena uno de los 2 campos");
                     }else{
-                        
                         this.props.jump(4);
                     }
                     
@@ -106,18 +105,29 @@ const styles = StyleSheet.create({
 });
 
 
-// const mapStateToProps = state => {
-//     return {
-//         // name: state.songSetName
-//     }
-// };
+const mapStateToProps = state => {
+    return {
+        email: state.songSetEmailLocator,
+        phone: state.songSetPhoneLocator
+    }
+};
 
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         // songSetName: params => {
-//         //     // dispatch(songSetName(params));
-//         // }
-//     }
-// };
+const mapDispatchToProps = dispatch => {
+    return {
+        songSetEmailLocator: params => {
+            dispatch(songSetEmailLocator({
+                email:params,
+                upload_state: 32
+            }));
+        },
+        songSetPhoneLocator: params => {
+            dispatch(songSetPhoneLocator({
+                phone: params,
+                upload_state: 32
+            }));
+        }
+    }
+};
 
-// export default connect(mapStateToProps, mapDispatchToProps)(NameSong);
+export const UploadFromDevice = connect(mapStateToProps, mapDispatchToProps)(UploadFromDevice_);
+export const UploadFromOther = connect(mapStateToProps, mapDispatchToProps)(UploadFromOther_);

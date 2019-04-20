@@ -92,7 +92,10 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         songSetName: params => {
-            dispatch(songSetName(params));
+            dispatch(songSetName({
+                name: params,
+                upload_state: 1
+            }));
         }
     }
 };

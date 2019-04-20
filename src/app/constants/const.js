@@ -5,3 +5,5 @@ export const NEXT_STEP = "NEXT_STEP";
 export const PREV_STEP = "PREV_STEP";
 export const SET_STEP = "SET_STEP";
 export const SET_AUTHOR = "SET_AUTHOR";
+export const SONG_PHONE_LOCATOR = "SONG_PHONE_LOCATOR";
+export const SONG_EMAIL_LOCATOR = "SONG_EMAIL_LOCATOR";
