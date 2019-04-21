@@ -1,12 +1,12 @@
 
 import {combineReducers} from 'redux';
-import changeName from './test.reducer';
+import user from './user_info/user.reduce';
 import setMetadataSong from './song_upload/song_upload.reducer';
 import wizardStep from './wizard_step';
 
 export  const reducers = combineReducers(
     {
-        changeName,
+        user,
         setMetadataSong,
         wizardStep
 

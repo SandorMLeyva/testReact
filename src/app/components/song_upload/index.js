@@ -5,7 +5,10 @@ import { nextStep, prevStep, setStep } from '../../actions/wizard_step';
 import NameSong from './step1';
 import AuthorSong from './step2';
 import UploadTrack from './step3';
-import { UploadFromDevice, UploadFromOther } from './step3xx';
+import { UploadSongFromDevice, UploadSongFromOther } from './step3xx';
+import UploadImgTrack from './step4';
+import { UploadImgFromDevice, UploadImgFromOther, UploadFromLink } from './step4xx';
+
 
 /*
 
@@ -44,13 +47,37 @@ export class SongUpload extends Component {
             case 31:
                 return (
                     <View>
-                        <UploadFromDevice jump={this.props.setStep}></UploadFromDevice>
+                        <UploadSongFromDevice jump={this.props.setStep}></UploadSongFromDevice>
                     </View>
                 )
             case 32:
                 return (
                     <View>
-                        <UploadFromOther jump={this.props.setStep}></UploadFromOther>
+                        <UploadSongFromOther jump={this.props.setStep}></UploadSongFromOther>
+                    </View>
+                )
+            case 4:
+                return (
+                    <View>
+                        <UploadImgTrack jump={this.props.setStep}></UploadImgTrack>
+                    </View>
+                )
+            case 41:
+                return (
+                    <View>
+                        <UploadImgFromDevice jump={this.props.setStep}></UploadImgFromDevice>
+                    </View>
+                )
+            case 42:
+                return (
+                    <View>
+                        <UploadImgFromOther jump={this.props.setStep}></UploadImgFromOther>
+                    </View>
+                )
+            case 43:
+                return (
+                    <View>
+                        <UploadFromLink jump={this.props.setStep}></UploadFromLink>
                     </View>
                 )
             default:
