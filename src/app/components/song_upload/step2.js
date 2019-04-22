@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, TextInput, Button } from 'react-native';
+import {connect} from 'react-redux';
+import {songSetAuthor} from '../../actions';
 
-
-export default class AuthorSong extends Component {
+export class AuthorSong extends Component {
 
     _isMounted = true;
     constructor(props) {
@@ -23,14 +24,13 @@ export default class AuthorSong extends Component {
                 </Text>
 
                 <Button title="Si" onPress={() => {
-
+                    this.props.songSetAuthor(true);
                     this.props.next();
 
                 }}></Button>
                 <Button title="No" onPress={() => {
-                    alert("ver que se hace cuando se marque no");
-                    //this.props.jump(0);
-
+                    this.props.songSetAuthor(false);
+                    this.props.next();                    
                 }}></Button>
             </View>
         )
@@ -49,18 +49,21 @@ const styles = StyleSheet.create({
 });
 
 
-// const mapStateToProps = state => {
-//     return {
-//         name: state.songSetName
-//     }
-// };
+const mapStateToProps = state => {
+    return {
+        // name: state.songSetName
+    }
+};
 
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         songSetName: params => {
-//             dispatch(songSetName(params));
-//         }
-//     }
-// };
+const mapDispatchToProps = dispatch => {
+    return {
+        songSetAuthor: params => {
+            dispatch(songSetAuthor({
+                author: params,
+                upload_state: 3
+            }));
+        }
+    }
+};
 
-// export default connect(mapStateToProps, mapDispatchToProps)(AuthorSong);
+export default connect(mapStateToProps, mapDispatchToProps)(AuthorSong);

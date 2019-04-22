@@ -31,12 +31,14 @@
 
 import {
   CHANGE_NAME, 
+  SONG_SET_AUTHOR,
   SONG_SET_NAME, 
   SONG_EMAIL_LOCATOR, 
   SONG_PHONE_LOCATOR, 
   IMG_EMAIL_LOCATOR, 
   IMG_LINK_LOCATOR,
-  IMG_PHONE_LOCATOR
+  IMG_PHONE_LOCATOR,
+  ADD_COLABORATOR
 } from '../constants/const';
 
 
@@ -93,6 +95,14 @@ export function imgSetPhoneLocator(params) {
 export function imgSetLinkLocator(params) {
   return {
         type: IMG_LINK_LOCATOR,
+        payload: params
+      };
+}
+
+
+export function addColaborator(params) {
+  return {
+        type: ADD_COLABORATOR,
         payload: params
       };
 }
