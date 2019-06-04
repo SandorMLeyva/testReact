@@ -1,0 +1,9 @@
+{
+	"Artboard11": {
+		"tabBarItem": "Item",
+		"textFieldTextInput": "Titulo",
+		"buttonButton": "Click me",
+		"wizzardCancionSaludoInicialText": "Hola Sander, A por tu nuevo Hit ! ",
+		"wizzardCancionPreguntaTituloText": "What its your song name ?"
+	}
+}
