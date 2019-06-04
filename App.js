@@ -14,6 +14,7 @@ import Artboard from './App/Artboard/Artboard'
 import { jsons } from "./App/JsonScheme/jsonscheme"
 import Test from "./App/Test1"
 import Test2 from "./App/D1"
+import SongUpload from './src/app/components/song_upload'
 
 
 

@@ -39,7 +39,12 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
+<<<<<<< HEAD
 		6FC78D2B66ED4ACCAA0F839D /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E092C89DC9049158A62433E /* libRCTVideo.a */; };
+=======
+		DCE0C963C2F8485FB547DA83 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5718EB8EADA4485A8A3C6829 /* libRNSVG.a */; };
+		E4D535527AF446D7ACB036B8 /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C737B2D551DF49BF83A5F8D3 /* libRNSVG-tvOS.a */; };
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,8 +352,14 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+<<<<<<< HEAD
 		EFE5C7EF27C84E828C8477DA /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; name = "RCTVideo.xcodeproj"; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		4E092C89DC9049158A62433E /* libRCTVideo.a */ = {isa = PBXFileReference; name = "libRCTVideo.a"; path = "libRCTVideo.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+=======
+		838C63E9E59548D9ACE27F75 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; name = "RNSVG.xcodeproj"; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		5718EB8EADA4485A8A3C6829 /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		C737B2D551DF49BF83A5F8D3 /* libRNSVG-tvOS.a */ = {isa = PBXFileReference; name = "libRNSVG-tvOS.a"; path = "libRNSVG-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,7 +388,11 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+<<<<<<< HEAD
 				6FC78D2B66ED4ACCAA0F839D /* libRCTVideo.a in Frameworks */,
+=======
+				DCE0C963C2F8485FB547DA83 /* libRNSVG.a in Frameworks */,
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +409,10 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
+<<<<<<< HEAD
+=======
+				E4D535527AF446D7ACB036B8 /* libRNSVG-tvOS.a in Frameworks */,
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +586,11 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+<<<<<<< HEAD
 				EFE5C7EF27C84E828C8477DA /* RCTVideo.xcodeproj */,
+=======
+				838C63E9E59548D9ACE27F75 /* RNSVG.xcodeproj */,
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1196,10 +1219,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-video\ios/**",
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 				);
 			};
 			name = Debug;
@@ -1222,10 +1253,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-video\ios/**",
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 				);
 			};
 			name = Release;
@@ -1248,7 +1287,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+<<<<<<< HEAD
 					"$(SRCROOT)\..\node_modules\react-native-video\ios/**",
+=======
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 				);
 			};
 			name = Debug;
@@ -1270,7 +1313,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+<<<<<<< HEAD
 					"$(SRCROOT)\..\node_modules\react-native-video\ios/**",
+=======
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 				);
 			};
 			name = Release;
@@ -1301,10 +1348,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-video\ios/**",
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 				);
 			};
 			name = Debug;
@@ -1335,10 +1390,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-video\ios/**",
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 				);
 			};
 			name = Release;
@@ -1368,10 +1431,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-video\ios/**",
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 				);
 			};
 			name = Debug;
@@ -1401,10 +1472,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-video\ios/**",
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+>>>>>>> 3c5a153eb747c9569fc841003819c888c5b546cd
 				);
 			};
 			name = Release;
